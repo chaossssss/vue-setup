@@ -1,0 +1,20 @@
+{
+  // ctrl + alt + i
+  "fileheader.customMade": {
+    "Description": "",
+    "Date": "Do not edit",
+    "LastEditTime": "Do not edit"
+  },
+  // ctrl + alt + t
+  "fileheader.cursorMode": {
+    "description": "",
+    "param": "",
+    "return": ""
+  },
+  // "editor.formatOnType": true,
+  "editor.formatOnSave": false,
+  // 保存时按照eslint标准
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

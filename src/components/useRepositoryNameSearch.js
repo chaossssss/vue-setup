@@ -1,4 +1,4 @@
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 
 export default function useRepositoryNameSearch(repositories) {
   const searchQuery = ref('')
@@ -7,7 +7,9 @@ export default function useRepositoryNameSearch(repositories) {
       return repository.repoName.includes(searchQuery.value)
     })
   })
-
+  watch(searchQuery,(val) => {
+    console.log(val)
+  })
   return {
     searchQuery,
     repositoriesMatchingSearchQuery
